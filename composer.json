@@ -1,0 +1,45 @@
+{
+    "name": "blok/laravel-javascript",
+    "description": "Javascript add variables helper",
+    "keywords": ["laravel", "framework", "utilities", "blok"],
+    "license": "MIT",
+    "authors": [{
+        "name": "Co-Labs",
+        "email": "info@co-labs.be",
+        "homepage": "http://www.co-labs.be"
+    }],
+    "require": {
+        "php": ">=5.5.0",
+        "illuminate/support": "~5.3.*"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "~2.0"
+    },
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ],
+        "psr-4": {
+            "Blok\\JavaScript\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Blok\\JavaScript\\JavaScriptServiceProvider"
+            ],
+            "aliases": {
+                "JavaScript": "Blok\\JavaScriptFacade"
+            }
+        }
+    }
+}
