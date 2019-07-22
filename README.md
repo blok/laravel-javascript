@@ -1,4 +1,9 @@
-# Set PHP variables to JavaScript global
+# Set PHP variables to a JavaScript global helper
+
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/blok/laravel-javascript/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/blok/laravel-javascript/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/blok/laravel-javascript/badges/build.png?b=master)](https://scrutinizer-ci.com/g/blok/laravel-javascript/build-status/master)
+[![Packagist](https://poser.pugx.org/blok/laravel-javascript/d/total.svg)](https://packagist.org/packages/blok/laravel-javascript)
+[![Packagist](https://img.shields.io/packagist/l/blok/laravel-javascript.svg)](https://packagist.org/packages/blok/laravel-javascript)
 
 ## Installation
 
