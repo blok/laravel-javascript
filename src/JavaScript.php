@@ -308,7 +308,11 @@ class JavaScript
 
         $this->merge($variables);
 
-        return ($scriptTag?'<script>':'').'window.' . $varName . ' = ' . $this->toJson() . ';'.($scriptTag?'</script>':'');
+        if ($scriptTag) {
+            return '<script>' . $this->render($varName, $variables, false) . '</script>';
+        }
+
+        return 'window.' . $varName . ' = JSON.parse(atob(\'' . base64_encode($this->toJson()) . '\'));';
     }
 
     public function renderVar($namespace = null, $variables = []){
